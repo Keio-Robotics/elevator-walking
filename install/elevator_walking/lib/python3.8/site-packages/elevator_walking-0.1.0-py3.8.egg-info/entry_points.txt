@@ -1,0 +1,3 @@
+[console_scripts]
+move_relative = elevator_walking.move_relative:main
+

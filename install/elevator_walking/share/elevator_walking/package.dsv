@@ -1,0 +1,6 @@
+source;share/elevator_walking/hook/pythonpath.ps1
+source;share/elevator_walking/hook/pythonpath.dsv
+source;share/elevator_walking/hook/pythonpath.sh
+source;share/elevator_walking/hook/ament_prefix_path.ps1
+source;share/elevator_walking/hook/ament_prefix_path.dsv
+source;share/elevator_walking/hook/ament_prefix_path.sh

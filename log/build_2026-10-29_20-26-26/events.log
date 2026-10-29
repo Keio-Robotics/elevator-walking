@@ -1,0 +1,72 @@
+[0.000000] (-) TimerEvent: {}
+[0.000828] (elevator_walking) JobQueued: {'identifier': 'elevator_walking', 'dependencies': OrderedDict()}
+[0.001496] (elevator_walking) JobStarted: {'identifier': 'elevator_walking'}
+[0.099975] (-) TimerEvent: {}
+[0.200837] (-) TimerEvent: {}
+[0.301727] (-) TimerEvent: {}
+[0.404374] (-) TimerEvent: {}
+[0.505101] (-) TimerEvent: {}
+[0.605977] (-) TimerEvent: {}
+[0.706748] (-) TimerEvent: {}
+[0.807524] (-) TimerEvent: {}
+[0.908233] (-) TimerEvent: {}
+[1.009437] (-) TimerEvent: {}
+[1.111234] (-) TimerEvent: {}
+[1.212855] (-) TimerEvent: {}
+[1.313573] (-) TimerEvent: {}
+[1.414590] (-) TimerEvent: {}
+[1.515404] (-) TimerEvent: {}
+[1.616183] (-) TimerEvent: {}
+[1.716781] (-) TimerEvent: {}
+[1.817386] (-) TimerEvent: {}
+[1.918042] (-) TimerEvent: {}
+[2.018694] (-) TimerEvent: {}
+[2.119567] (-) TimerEvent: {}
+[2.168612] (elevator_walking) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/elevator_walking', 'build', '--build-base', '/home/unitree/elevator-walking/build/elevator_walking/build', 'install', '--record', '/home/unitree/elevator-walking/build/elevator_walking/install.log', '--single-version-externally-managed'], 'cwd': '/home/unitree/elevator-walking/src/elevator_walking', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'unitree', 'SSH_CLIENT': '192.168.11.28 62965 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/unitree/.vscode-server/cli/servers/Stable-2c33b50b16c472efe58357d1d2a8a5414bc23fbf/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:', 'BROWSER': '/home/unitree/.vscode-server/cli/servers/Stable-2c33b50b16c472efe58357d1d2a8a5414bc23fbf/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/unitree', 'CYCLONEDDS_URI': '/home/unitree/cyclonedds_ws/cyclonedds.xml', 'OLDPWD': '/home/unitree', 'TERM_PROGRAM_VERSION': '1.144.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-9747410a-93ea-44c4-8057-ae5e2ed5bc92.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/unitree/.vscode-server/cli/servers/Stable-2c33b50b16c472efe58357d1d2a8a5414bc23fbf/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/unitree/.vscode-server/cli/servers/Stable-2c33b50b16c472efe58357d1d2a8a5414bc23fbf/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'unitree', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/unitree/.vscode-server/cli/servers/Stable-2c33b50b16c472efe58357d1d2a8a5414bc23fbf/server/bin/remote-cli:/home/unitree/.local/bin:/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/unitree/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/unitree/.vscode-server/cli/servers/Stable-2c33b50b16c472efe58357d1d2a8a5414bc23fbf/server/bin/copilot-shim', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'CYCLONEDDS_HOME': '/home/unitree/cyclonedds_ws/install/cyclonedds', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7106902c1d.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/unitree/elevator-walking/build/elevator_walking', 'LC_ALL': 'C.UTF-8', 'COPILOT_DEBUG_NONCE': '29bcde51c8c36176e6c3ea35b9dd4c76', 'SSH_CONNECTION': '192.168.11.28 62965 192.168.11.14 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/unitree/elevator-walking/build/elevator_walking/prefix_override:/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds'}, 'shell': False}
+[2.219781] (-) TimerEvent: {}
+[2.320619] (-) TimerEvent: {}
+[2.421423] (-) TimerEvent: {}
+[2.522208] (-) TimerEvent: {}
+[2.622995] (-) TimerEvent: {}
+[2.624994] (elevator_walking) StdoutLine: {'line': b'running egg_info\n'}
+[2.626094] (elevator_walking) StdoutLine: {'line': b'creating ../../build/elevator_walking/elevator_walking.egg-info\n'}
+[2.626836] (elevator_walking) StdoutLine: {'line': b'writing ../../build/elevator_walking/elevator_walking.egg-info/PKG-INFO\n'}
+[2.627491] (elevator_walking) StdoutLine: {'line': b'writing dependency_links to ../../build/elevator_walking/elevator_walking.egg-info/dependency_links.txt\n'}
+[2.627933] (elevator_walking) StdoutLine: {'line': b'writing entry points to ../../build/elevator_walking/elevator_walking.egg-info/entry_points.txt\n'}
+[2.628358] (elevator_walking) StdoutLine: {'line': b'writing requirements to ../../build/elevator_walking/elevator_walking.egg-info/requires.txt\n'}
+[2.628690] (elevator_walking) StdoutLine: {'line': b'writing top-level names to ../../build/elevator_walking/elevator_walking.egg-info/top_level.txt\n'}
+[2.633353] (elevator_walking) StdoutLine: {'line': b"writing manifest file '../../build/elevator_walking/elevator_walking.egg-info/SOURCES.txt'\n"}
+[2.695372] (elevator_walking) StdoutLine: {'line': b"reading manifest file '../../build/elevator_walking/elevator_walking.egg-info/SOURCES.txt'\n"}
+[2.696711] (elevator_walking) StdoutLine: {'line': b"writing manifest file '../../build/elevator_walking/elevator_walking.egg-info/SOURCES.txt'\n"}
+[2.697179] (elevator_walking) StdoutLine: {'line': b'running build\n'}
+[2.697485] (elevator_walking) StdoutLine: {'line': b'running build_py\n'}
+[2.697889] (elevator_walking) StdoutLine: {'line': b'creating /home/unitree/elevator-walking/build/elevator_walking/build\n'}
+[2.698170] (elevator_walking) StdoutLine: {'line': b'creating /home/unitree/elevator-walking/build/elevator_walking/build/lib\n'}
+[2.698386] (elevator_walking) StdoutLine: {'line': b'creating /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking\n'}
+[2.698655] (elevator_walking) StdoutLine: {'line': b'copying elevator_walking/move_relative.py -> /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking\n'}
+[2.698856] (elevator_walking) StdoutLine: {'line': b'copying elevator_walking/__init__.py -> /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking\n'}
+[2.699048] (elevator_walking) StdoutLine: {'line': b'running install\n'}
+[2.700188] (elevator_walking) StdoutLine: {'line': b'running install_lib\n'}
+[2.702109] (elevator_walking) StdoutLine: {'line': b'creating /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking\n'}
+[2.702397] (elevator_walking) StdoutLine: {'line': b'copying /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking/move_relative.py -> /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking\n'}
+[2.702667] (elevator_walking) StdoutLine: {'line': b'copying /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking/__init__.py -> /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking\n'}
+[2.703637] (elevator_walking) StdoutLine: {'line': b'byte-compiling /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking/move_relative.py to move_relative.cpython-38.pyc\n'}
+[2.706727] (elevator_walking) StdoutLine: {'line': b'byte-compiling /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking/__init__.py to __init__.cpython-38.pyc\n'}
+[2.707055] (elevator_walking) StdoutLine: {'line': b'running install_data\n'}
+[2.708071] (elevator_walking) StdoutLine: {'line': b'creating /home/unitree/elevator-walking/install/elevator_walking/share/ament_index\n'}
+[2.708476] (elevator_walking) StdoutLine: {'line': b'creating /home/unitree/elevator-walking/install/elevator_walking/share/ament_index/resource_index\n'}
+[2.708701] (elevator_walking) StdoutLine: {'line': b'creating /home/unitree/elevator-walking/install/elevator_walking/share/ament_index/resource_index/packages\n'}
+[2.709061] (elevator_walking) StdoutLine: {'line': b'copying resource/elevator_walking -> /home/unitree/elevator-walking/install/elevator_walking/share/ament_index/resource_index/packages\n'}
+[2.709270] (elevator_walking) StdoutLine: {'line': b'copying package.xml -> /home/unitree/elevator-walking/install/elevator_walking/share/elevator_walking\n'}
+[2.709467] (elevator_walking) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.712321] (elevator_walking) StdoutLine: {'line': b'Copying ../../build/elevator_walking/elevator_walking.egg-info to /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking-0.1.0-py3.8.egg-info\n'}
+[2.714331] (elevator_walking) StdoutLine: {'line': b'running install_scripts\n'}
+[2.723090] (-) TimerEvent: {}
+[2.750931] (elevator_walking) StdoutLine: {'line': b'Installing move_relative script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking\n'}
+[2.751709] (elevator_walking) StdoutLine: {'line': b"writing list of installed files to '/home/unitree/elevator-walking/build/elevator_walking/install.log'\n"}
+[2.814458] (elevator_walking) CommandEnded: {'returncode': 0}
+[2.824332] (-) TimerEvent: {}
+[2.925735] (-) TimerEvent: {}
+[3.027200] (-) TimerEvent: {}
+[3.092423] (elevator_walking) JobEnded: {'identifier': 'elevator_walking', 'rc': 0}
+[3.094575] (-) EventReactorShutdown: {}
