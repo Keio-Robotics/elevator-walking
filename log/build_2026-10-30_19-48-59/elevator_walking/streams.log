@@ -1,0 +1,19 @@
+[2.128s] Invoking command in '/home/unitree/elevator-walking/build/elevator_walking': PYTHONPATH=/home/unitree/elevator-walking/build/elevator_walking/prefix_override:/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/unitree/elevator-walking/build/elevator_walking/build --no-deps install_data
+[2.605s] running develop
+[2.901s] running egg_info
+[2.901s] writing elevator_walking.egg-info/PKG-INFO
+[2.902s] writing dependency_links to elevator_walking.egg-info/dependency_links.txt
+[2.902s] writing entry points to elevator_walking.egg-info/entry_points.txt
+[2.902s] writing requirements to elevator_walking.egg-info/requires.txt
+[2.902s] writing top-level names to elevator_walking.egg-info/top_level.txt
+[2.963s] reading manifest file 'elevator_walking.egg-info/SOURCES.txt'
+[2.964s] writing manifest file 'elevator_walking.egg-info/SOURCES.txt'
+[3.035s] running build_ext
+[3.035s] Creating /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator-walking.egg-link (link to .)
+[3.037s] Installing move_relative script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[3.037s] Installing move_until_distance script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[3.037s] Installing publish_center_distance script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[3.038s] 
+[3.038s] Installed /home/unitree/elevator-walking/build/elevator_walking
+[3.038s] running install_data
+[3.110s] Invoked command in '/home/unitree/elevator-walking/build/elevator_walking' returned '0': PYTHONPATH=/home/unitree/elevator-walking/build/elevator_walking/prefix_override:/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/unitree/elevator-walking/build/elevator_walking/build --no-deps install_data

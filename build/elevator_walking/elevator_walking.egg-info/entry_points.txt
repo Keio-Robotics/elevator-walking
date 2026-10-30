@@ -1,3 +1,5 @@
 [console_scripts]
 move_relative = elevator_walking.move_relative:main
+move_until_distance = elevator_walking.move_until_distance:main
+publish_center_distance = elevator_walking.center_distance:main
 

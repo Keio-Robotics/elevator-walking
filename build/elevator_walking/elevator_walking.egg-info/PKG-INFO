@@ -1,7 +1,7 @@
 Metadata-Version: 1.2
 Name: elevator-walking
 Version: 0.1.0
-Summary: Relative movement CLI for Unitree Go2 using Unitree SDK 2.
+Summary: Unitree Go2 relative movement and depth distance ROS 2 tools.
 Home-page: UNKNOWN
 Maintainer: unitree
 Maintainer-email: unitree@todo.todo

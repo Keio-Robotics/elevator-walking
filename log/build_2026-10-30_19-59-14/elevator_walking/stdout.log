@@ -1,0 +1,18 @@
+running develop
+running egg_info
+writing elevator_walking.egg-info/PKG-INFO
+writing dependency_links to elevator_walking.egg-info/dependency_links.txt
+writing entry points to elevator_walking.egg-info/entry_points.txt
+writing requirements to elevator_walking.egg-info/requires.txt
+writing top-level names to elevator_walking.egg-info/top_level.txt
+reading manifest file 'elevator_walking.egg-info/SOURCES.txt'
+writing manifest file 'elevator_walking.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator-walking.egg-link (link to .)
+Installing move_relative script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+Installing move_until_distance script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+Installing publish_center_distance script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+
+Installed /home/unitree/elevator-walking/build/elevator_walking
+running install_data
+copying package.xml -> /home/unitree/elevator-walking/install/elevator_walking/share/elevator_walking

@@ -1,0 +1,24 @@
+running egg_info
+writing ../../build/elevator_walking/elevator_walking.egg-info/PKG-INFO
+writing dependency_links to ../../build/elevator_walking/elevator_walking.egg-info/dependency_links.txt
+writing entry points to ../../build/elevator_walking/elevator_walking.egg-info/entry_points.txt
+writing requirements to ../../build/elevator_walking/elevator_walking.egg-info/requires.txt
+writing top-level names to ../../build/elevator_walking/elevator_walking.egg-info/top_level.txt
+reading manifest file '../../build/elevator_walking/elevator_walking.egg-info/SOURCES.txt'
+writing manifest file '../../build/elevator_walking/elevator_walking.egg-info/SOURCES.txt'
+running build
+running build_py
+copying elevator_walking/center_distance.py -> /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking
+running install
+running install_lib
+copying /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking/center_distance.py -> /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking
+byte-compiling /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking/center_distance.py to center_distance.cpython-38.pyc
+running install_data
+copying package.xml -> /home/unitree/elevator-walking/install/elevator_walking/share/elevator_walking
+running install_egg_info
+removing '/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking-0.1.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/elevator_walking/elevator_walking.egg-info to /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking-0.1.0-py3.8.egg-info
+running install_scripts
+Installing move_relative script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+Installing publish_center_distance script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+writing list of installed files to '/home/unitree/elevator-walking/build/elevator_walking/install.log'

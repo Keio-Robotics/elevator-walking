@@ -1,0 +1,26 @@
+[2.221s] Invoking command in '/home/unitree/elevator-walking/src/elevator_walking': PYTHONPATH=/home/unitree/elevator-walking/build/elevator_walking/prefix_override:/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/elevator_walking build --build-base /home/unitree/elevator-walking/build/elevator_walking/build install --record /home/unitree/elevator-walking/build/elevator_walking/install.log --single-version-externally-managed
+[2.661s] running egg_info
+[2.661s] writing ../../build/elevator_walking/elevator_walking.egg-info/PKG-INFO
+[2.662s] writing dependency_links to ../../build/elevator_walking/elevator_walking.egg-info/dependency_links.txt
+[2.662s] writing entry points to ../../build/elevator_walking/elevator_walking.egg-info/entry_points.txt
+[2.663s] writing requirements to ../../build/elevator_walking/elevator_walking.egg-info/requires.txt
+[2.663s] writing top-level names to ../../build/elevator_walking/elevator_walking.egg-info/top_level.txt
+[2.727s] reading manifest file '../../build/elevator_walking/elevator_walking.egg-info/SOURCES.txt'
+[2.728s] writing manifest file '../../build/elevator_walking/elevator_walking.egg-info/SOURCES.txt'
+[2.729s] running build
+[2.729s] running build_py
+[2.730s] copying elevator_walking/move_until_distance.py -> /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking
+[2.730s] running install
+[2.732s] running install_lib
+[2.733s] copying /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking/move_until_distance.py -> /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking
+[2.735s] byte-compiling /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking/move_until_distance.py to move_until_distance.cpython-38.pyc
+[2.740s] running install_data
+[2.741s] running install_egg_info
+[2.745s] removing '/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking-0.1.0-py3.8.egg-info' (and everything under it)
+[2.745s] Copying ../../build/elevator_walking/elevator_walking.egg-info to /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking-0.1.0-py3.8.egg-info
+[2.747s] running install_scripts
+[2.783s] Installing move_relative script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[2.784s] Installing move_until_distance script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[2.784s] Installing publish_center_distance script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[2.785s] writing list of installed files to '/home/unitree/elevator-walking/build/elevator_walking/install.log'
+[2.843s] Invoked command in '/home/unitree/elevator-walking/src/elevator_walking' returned '0': PYTHONPATH=/home/unitree/elevator-walking/build/elevator_walking/prefix_override:/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/elevator_walking build --build-base /home/unitree/elevator-walking/build/elevator_walking/build install --record /home/unitree/elevator-walking/build/elevator_walking/install.log --single-version-externally-managed

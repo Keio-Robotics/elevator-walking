@@ -14,11 +14,13 @@ setup(
     zip_safe=True,
     maintainer="unitree",
     maintainer_email="unitree@todo.todo",
-    description="Relative movement CLI for Unitree Go2 using Unitree SDK 2.",
+    description="Unitree Go2 relative movement and depth distance ROS 2 tools.",
     license="TODO",
     entry_points={
         "console_scripts": [
             "move_relative = elevator_walking.move_relative:main",
+            "publish_center_distance = elevator_walking.center_distance:main",
+            "move_until_distance = elevator_walking.move_until_distance:main",
         ],
     },
 )

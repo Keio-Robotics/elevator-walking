@@ -10,5 +10,7 @@ setup.py
 ../../build/elevator_walking/elevator_walking.egg-info/top_level.txt
 ../../build/elevator_walking/elevator_walking.egg-info/zip-safe
 elevator_walking/__init__.py
+elevator_walking/center_distance.py
 elevator_walking/move_relative.py
+elevator_walking/move_until_distance.py
 resource/elevator_walking
