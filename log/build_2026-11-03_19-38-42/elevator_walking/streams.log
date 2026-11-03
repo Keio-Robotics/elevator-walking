@@ -1,0 +1,50 @@
+[2.739s] Invoking command in '/home/unitree/elevator-walking/build/elevator_walking': PYTHONPATH=/home/unitree/elevator-walking/build/elevator_walking/prefix_override:/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/unitree/elevator-walking/build/elevator_walking/build
+[3.241s] running develop
+[3.539s] Removing /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator-walking.egg-link (link to .)
+[3.599s] Invoked command in '/home/unitree/elevator-walking/build/elevator_walking' returned '0': PYTHONPATH=/home/unitree/elevator-walking/build/elevator_walking/prefix_override:/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/unitree/elevator-walking/build/elevator_walking/build
+[3.604s] Invoking command in '/home/unitree/elevator-walking/src/elevator_walking': PYTHONPATH=/home/unitree/elevator-walking/build/elevator_walking/prefix_override:/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/elevator_walking build --build-base /home/unitree/elevator-walking/build/elevator_walking/build install --record /home/unitree/elevator-walking/build/elevator_walking/install.log --single-version-externally-managed
+[4.067s] running egg_info
+[4.068s] writing ../../build/elevator_walking/elevator_walking.egg-info/PKG-INFO
+[4.069s] writing dependency_links to ../../build/elevator_walking/elevator_walking.egg-info/dependency_links.txt
+[4.069s] writing entry points to ../../build/elevator_walking/elevator_walking.egg-info/entry_points.txt
+[4.069s] writing requirements to ../../build/elevator_walking/elevator_walking.egg-info/requires.txt
+[4.069s] writing top-level names to ../../build/elevator_walking/elevator_walking.egg-info/top_level.txt
+[4.139s] reading manifest file '../../build/elevator_walking/elevator_walking.egg-info/SOURCES.txt'
+[4.141s] writing manifest file '../../build/elevator_walking/elevator_walking.egg-info/SOURCES.txt'
+[4.142s] running build
+[4.142s] running build_py
+[4.142s] copying elevator_walking/vertical_line_detector.py -> /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking
+[4.142s] copying elevator_walking/move_left_until_line.py -> /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking
+[4.144s] running install
+[4.146s] running install_lib
+[4.148s] copying /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking/lidar_front_distance.py -> /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking
+[4.148s] copying /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking/vertical_line_detector.py -> /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking
+[4.148s] copying /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking/move_left_until_line.py -> /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking
+[4.149s] copying /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking/move_until_distance.py -> /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking
+[4.149s] copying /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking/move_relative.py -> /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking
+[4.149s] copying /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking/__init__.py -> /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking
+[4.149s] copying /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking/preview_vertical_lines.py -> /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking
+[4.150s] copying /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking/move_forward_distance.py -> /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking
+[4.150s] copying /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking/center_distance.py -> /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking
+[4.151s] byte-compiling /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking/lidar_front_distance.py to lidar_front_distance.cpython-38.pyc
+[4.156s] byte-compiling /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking/vertical_line_detector.py to vertical_line_detector.cpython-38.pyc
+[4.160s] byte-compiling /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking/move_left_until_line.py to move_left_until_line.cpython-38.pyc
+[4.164s] byte-compiling /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking/move_until_distance.py to move_until_distance.cpython-38.pyc
+[4.166s] byte-compiling /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking/move_relative.py to move_relative.cpython-38.pyc
+[4.168s] byte-compiling /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking/__init__.py to __init__.cpython-38.pyc
+[4.168s] byte-compiling /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking/preview_vertical_lines.py to preview_vertical_lines.cpython-38.pyc
+[4.169s] byte-compiling /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking/move_forward_distance.py to move_forward_distance.cpython-38.pyc
+[4.172s] byte-compiling /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking/center_distance.py to center_distance.cpython-38.pyc
+[4.174s] running install_data
+[4.175s] running install_egg_info
+[4.179s] Copying ../../build/elevator_walking/elevator_walking.egg-info to /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking-0.1.0-py3.8.egg-info
+[4.181s] running install_scripts
+[4.221s] Installing move_forward_distance script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[4.222s] Installing move_left_until_line script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[4.222s] Installing move_relative script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[4.222s] Installing move_until_distance script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[4.223s] Installing preview_vertical_lines script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[4.223s] Installing publish_center_distance script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[4.223s] Installing publish_lidar_distance script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[4.224s] writing list of installed files to '/home/unitree/elevator-walking/build/elevator_walking/install.log'
+[4.289s] Invoked command in '/home/unitree/elevator-walking/src/elevator_walking' returned '0': PYTHONPATH=/home/unitree/elevator-walking/build/elevator_walking/prefix_override:/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/elevator_walking build --build-base /home/unitree/elevator-walking/build/elevator_walking/build install --record /home/unitree/elevator-walking/build/elevator_walking/install.log --single-version-externally-managed

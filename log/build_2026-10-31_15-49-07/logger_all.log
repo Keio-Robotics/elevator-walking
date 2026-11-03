@@ -1,0 +1,130 @@
+[4.642s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[4.643s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8ba52940>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8ba52940>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff8b64c1f0>)
+[4.865s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.866s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.866s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.866s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.866s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.866s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.866s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/unitree/elevator-walking'
+[4.866s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.867s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.867s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.867s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.867s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.867s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.867s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.867s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.867s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.890s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.890s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.891s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.891s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.891s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.891s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.891s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.891s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.892s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.892s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.892s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.892s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.892s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.893s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.893s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[4.893s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[4.893s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[4.893s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[4.893s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[4.893s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[4.893s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[4.894s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[4.894s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[4.894s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[4.894s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[4.894s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[4.894s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[4.894s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[4.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/elevator_walking) by extensions ['ignore', 'ignore_ament_install']
+[4.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/elevator_walking) by extension 'ignore'
+[4.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/elevator_walking) by extension 'ignore_ament_install'
+[4.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/elevator_walking) by extensions ['colcon_pkg']
+[4.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/elevator_walking) by extension 'colcon_pkg'
+[4.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/elevator_walking) by extensions ['colcon_meta']
+[4.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/elevator_walking) by extension 'colcon_meta'
+[4.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/elevator_walking) by extensions ['ros']
+[4.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/elevator_walking) by extension 'ros'
+[4.900s] DEBUG:colcon.colcon_core.package_identification:Package 'src/elevator_walking' with type 'ros.ament_python' and name 'elevator_walking'
+[4.900s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.900s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.900s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.901s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.901s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[5.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[5.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[5.477s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/unitree/cyclonedds_ws/install
+[5.558s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 299 installed packages in /opt/ros/foxy
+[5.561s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[5.905s] Level 5:colcon.colcon_core.verb:set package 'elevator_walking' build argument 'cmake_args' from command line to 'None'
+[5.905s] Level 5:colcon.colcon_core.verb:set package 'elevator_walking' build argument 'cmake_target' from command line to 'None'
+[5.905s] Level 5:colcon.colcon_core.verb:set package 'elevator_walking' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.905s] Level 5:colcon.colcon_core.verb:set package 'elevator_walking' build argument 'cmake_clean_cache' from command line to 'False'
+[5.906s] Level 5:colcon.colcon_core.verb:set package 'elevator_walking' build argument 'cmake_clean_first' from command line to 'False'
+[5.906s] Level 5:colcon.colcon_core.verb:set package 'elevator_walking' build argument 'cmake_force_configure' from command line to 'False'
+[5.906s] Level 5:colcon.colcon_core.verb:set package 'elevator_walking' build argument 'ament_cmake_args' from command line to 'None'
+[5.906s] Level 5:colcon.colcon_core.verb:set package 'elevator_walking' build argument 'catkin_cmake_args' from command line to 'None'
+[5.906s] Level 5:colcon.colcon_core.verb:set package 'elevator_walking' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.906s] DEBUG:colcon.colcon_core.verb:Building package 'elevator_walking' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/unitree/elevator-walking/build/elevator_walking', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/unitree/elevator-walking/install/elevator_walking', 'merge_install': False, 'path': '/home/unitree/elevator-walking/src/elevator_walking', 'symlink_install': False, 'test_result_base': None}
+[5.983s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[6.062s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[6.063s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/unitree/elevator-walking/src/elevator_walking' with build type 'ament_python'
+[6.064s] Level 1:colcon.colcon_core.shell:create_environment_hook('elevator_walking', 'ament_prefix_path')
+[6.146s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[6.146s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/unitree/elevator-walking/install/elevator_walking/share/elevator_walking/hook/ament_prefix_path.ps1'
+[6.148s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/unitree/elevator-walking/install/elevator_walking/share/elevator_walking/hook/ament_prefix_path.dsv'
+[6.149s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/unitree/elevator-walking/install/elevator_walking/share/elevator_walking/hook/ament_prefix_path.sh'
+[6.230s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.230s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.966s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/unitree/elevator-walking/src/elevator_walking'
+[7.048s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.048s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.204s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/unitree/elevator-walking/build/elevator_walking': PYTHONPATH=/home/unitree/elevator-walking/build/elevator_walking/prefix_override:/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/unitree/elevator-walking/build/elevator_walking/build
+[9.035s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/unitree/elevator-walking/build/elevator_walking' returned '0': PYTHONPATH=/home/unitree/elevator-walking/build/elevator_walking/prefix_override:/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/unitree/elevator-walking/build/elevator_walking/build
+[9.043s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/unitree/elevator-walking/src/elevator_walking': PYTHONPATH=/home/unitree/elevator-walking/build/elevator_walking/prefix_override:/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/elevator_walking build --build-base /home/unitree/elevator-walking/build/elevator_walking/build install --record /home/unitree/elevator-walking/build/elevator_walking/install.log --single-version-externally-managed
+[9.669s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/unitree/elevator-walking/src/elevator_walking' returned '0': PYTHONPATH=/home/unitree/elevator-walking/build/elevator_walking/prefix_override:/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/elevator_walking build --build-base /home/unitree/elevator-walking/build/elevator_walking/build install --record /home/unitree/elevator-walking/build/elevator_walking/install.log --single-version-externally-managed
+[9.764s] Level 1:colcon.colcon_core.environment:checking '/home/unitree/elevator-walking/install/elevator_walking' for CMake module files
+[9.765s] Level 1:colcon.colcon_core.environment:checking '/home/unitree/elevator-walking/install/elevator_walking' for CMake config files
+[9.767s] Level 1:colcon.colcon_core.environment:checking '/home/unitree/elevator-walking/install/elevator_walking/lib'
+[9.767s] Level 1:colcon.colcon_core.environment:checking '/home/unitree/elevator-walking/install/elevator_walking/bin'
+[9.768s] Level 1:colcon.colcon_core.environment:checking '/home/unitree/elevator-walking/install/elevator_walking/lib/pkgconfig/elevator_walking.pc'
+[9.768s] Level 1:colcon.colcon_core.environment:checking '/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages'
+[9.768s] Level 1:colcon.colcon_core.shell:create_environment_hook('elevator_walking', 'pythonpath')
+[9.849s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/unitree/elevator-walking/install/elevator_walking/share/elevator_walking/hook/pythonpath.ps1'
+[9.850s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/unitree/elevator-walking/install/elevator_walking/share/elevator_walking/hook/pythonpath.dsv'
+[9.851s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/unitree/elevator-walking/install/elevator_walking/share/elevator_walking/hook/pythonpath.sh'
+[9.852s] Level 1:colcon.colcon_core.environment:checking '/home/unitree/elevator-walking/install/elevator_walking/bin'
+[9.852s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(elevator_walking)
+[9.932s] INFO:colcon.colcon_core.shell:Creating package script '/home/unitree/elevator-walking/install/elevator_walking/share/elevator_walking/package.ps1'
+[9.934s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/unitree/elevator-walking/install/elevator_walking/share/elevator_walking/package.dsv'
+[9.935s] INFO:colcon.colcon_core.shell:Creating package script '/home/unitree/elevator-walking/install/elevator_walking/share/elevator_walking/package.sh'
+[9.937s] INFO:colcon.colcon_core.shell:Creating package script '/home/unitree/elevator-walking/install/elevator_walking/share/elevator_walking/package.bash'
+[9.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/unitree/elevator-walking/install/elevator_walking/share/elevator_walking/package.zsh'
+[9.939s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/unitree/elevator-walking/install/elevator_walking/share/colcon-core/packages/elevator_walking)
+[9.940s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.941s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.941s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.942s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.055s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.055s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.055s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.084s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.Notifications exited with status 1
+[10.085s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.164s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/unitree/elevator-walking/install/local_setup.ps1'
+[10.166s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/unitree/elevator-walking/install/_local_setup_util_ps1.py'
+[10.169s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/unitree/elevator-walking/install/setup.ps1'
+[10.251s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/unitree/elevator-walking/install/local_setup.sh'
+[10.253s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/unitree/elevator-walking/install/_local_setup_util_sh.py'
+[10.254s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/unitree/elevator-walking/install/setup.sh'
+[10.335s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/unitree/elevator-walking/install/local_setup.bash'
+[10.336s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/unitree/elevator-walking/install/setup.bash'
+[10.420s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/unitree/elevator-walking/install/local_setup.zsh'
+[10.422s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/unitree/elevator-walking/install/setup.zsh'

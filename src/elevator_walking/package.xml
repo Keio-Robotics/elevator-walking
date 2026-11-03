@@ -2,7 +2,7 @@
 <package format="3">
   <name>elevator_walking</name>
   <version>0.1.0</version>
-  <description>Unitree Go2 relative movement and depth distance ROS 2 tools.</description>
+  <description>Unitree Go2 movement and lidar distance ROS 2 tools.</description>
   <maintainer email="unitree@todo.todo">unitree</maintainer>
   <license>TODO</license>
   <buildtool_depend>ament_python</buildtool_depend>
@@ -10,7 +10,10 @@
   <exec_depend>rclpy</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>
   <exec_depend>std_msgs</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-opencv</exec_depend>
   <exec_depend>unitree_api</exec_depend>
+  <exec_depend>unitree_go</exec_depend>
   <export>
     <build_type>ament_python</build_type>
   </export>

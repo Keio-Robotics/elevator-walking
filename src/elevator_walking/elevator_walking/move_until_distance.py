@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Move the robot until the published center distance crosses a threshold."""
+"""Move the robot until the published forward distance crosses a threshold."""
 
 import json
 import math
@@ -18,16 +18,30 @@ class MoveUntilDistance(Node):
 
     def __init__(self):
         super().__init__("move_until_distance")
-        self.declare_parameter("distance_topic", "/camera/depth/center_distance")
+        self.declare_parameter("distance_source", "lidar")
+        self.declare_parameter("distance_topic", "")
         self.declare_parameter("threshold_m", 0.5)
-        self.declare_parameter("vx", 0.1)
+        self.declare_parameter("vx", 0.01)
         self.declare_parameter("vy", 0.0)
         self.declare_parameter("vyaw", 0.0)
         self.declare_parameter("command_period_s", 0.1)
         self.declare_parameter("sensor_timeout_s", 0.5)
         self.declare_parameter("max_motion_s", 10.0)
 
-        distance_topic = str(self.get_parameter("distance_topic").value)
+        self.distance_source = str(
+            self.get_parameter("distance_source").value
+        ).strip().lower()
+        source_topics = {
+            "lidar": "/utlidar/front_distance",
+            "realsense": "/camera/depth/center_distance",
+        }
+        if self.distance_source not in source_topics:
+            raise ValueError(
+                "distance_source must be either 'lidar' or 'realsense'"
+            )
+
+        configured_topic = str(self.get_parameter("distance_topic").value).strip()
+        distance_topic = configured_topic or source_topics[self.distance_source]
         self.threshold_m = float(self.get_parameter("threshold_m").value)
         self.vx = float(self.get_parameter("vx").value)
         self.vy = float(self.get_parameter("vy").value)
@@ -67,7 +81,8 @@ class MoveUntilDistance(Node):
         )
         self.timer = self.create_timer(command_period_s, self._control_tick)
         self.get_logger().info(
-            f"Waiting for {distance_topic}; will stop below "
+            f"Using {self.distance_source} distance from {distance_topic}; "
+            f"will stop below "
             f"{self.threshold_m:.3f} m. Move command: "
             f"({self.vx:.2f}, {self.vy:.2f}, {self.vyaw:.2f})."
         )
@@ -77,8 +92,9 @@ class MoveUntilDistance(Node):
             from unitree_api.msg import Request
         except ImportError as exc:
             raise RuntimeError(
-                "unitree_api messages are unavailable; source the Unitree "
-                "ROS 2 workspace before running this node"
+                "unitree_api messages are unavailable; source the Foxy "
+                "Unitree message overlay, for example "
+                "/home/unitree/go2w/dlio_ws/install_foxy/setup.bash"
             ) from exc
 
         self._request_type = Request

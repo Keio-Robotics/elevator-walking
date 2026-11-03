@@ -1,0 +1,23 @@
+[2.391s] Invoking command in '/home/unitree/elevator-walking/build/elevator_walking': PYTHONPATH=/home/unitree/elevator-walking/build/elevator_walking/prefix_override:/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/unitree/elevator-walking/build/elevator_walking/build --no-deps install_data
+[2.894s] running develop
+[3.194s] running egg_info
+[3.194s] writing elevator_walking.egg-info/PKG-INFO
+[3.194s] writing dependency_links to elevator_walking.egg-info/dependency_links.txt
+[3.195s] writing entry points to elevator_walking.egg-info/entry_points.txt
+[3.195s] writing requirements to elevator_walking.egg-info/requires.txt
+[3.195s] writing top-level names to elevator_walking.egg-info/top_level.txt
+[3.256s] reading manifest file 'elevator_walking.egg-info/SOURCES.txt'
+[3.258s] writing manifest file 'elevator_walking.egg-info/SOURCES.txt'
+[3.333s] running build_ext
+[3.334s] Creating /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator-walking.egg-link (link to .)
+[3.336s] Installing move_forward_distance script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[3.337s] Installing move_left_until_line script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[3.338s] Installing move_relative script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[3.338s] Installing move_until_distance script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[3.339s] Installing preview_vertical_lines script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[3.339s] Installing publish_center_distance script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[3.339s] Installing publish_lidar_distance script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[3.339s] 
+[3.339s] Installed /home/unitree/elevator-walking/build/elevator_walking
+[3.339s] running install_data
+[3.425s] Invoked command in '/home/unitree/elevator-walking/build/elevator_walking' returned '0': PYTHONPATH=/home/unitree/elevator-walking/build/elevator_walking/prefix_override:/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/unitree/elevator-walking/build/elevator_walking/build --no-deps install_data
