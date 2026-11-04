@@ -1,0 +1,31 @@
+[2.846s] Invoking command in '/home/unitree/elevator-walking/src/elevator_walking': PYTHONPATH=/home/unitree/elevator-walking/build/elevator_walking/prefix_override:/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/elevator_walking build --build-base /home/unitree/elevator-walking/build/elevator_walking/build install --record /home/unitree/elevator-walking/build/elevator_walking/install.log --single-version-externally-managed
+[3.503s] running egg_info
+[3.504s] writing ../../build/elevator_walking/elevator_walking.egg-info/PKG-INFO
+[3.505s] writing dependency_links to ../../build/elevator_walking/elevator_walking.egg-info/dependency_links.txt
+[3.506s] writing entry points to ../../build/elevator_walking/elevator_walking.egg-info/entry_points.txt
+[3.506s] writing requirements to ../../build/elevator_walking/elevator_walking.egg-info/requires.txt
+[3.506s] writing top-level names to ../../build/elevator_walking/elevator_walking.egg-info/top_level.txt
+[3.601s] reading manifest file '../../build/elevator_walking/elevator_walking.egg-info/SOURCES.txt'
+[3.603s] writing manifest file '../../build/elevator_walking/elevator_walking.egg-info/SOURCES.txt'
+[3.604s] running build
+[3.604s] running build_py
+[3.604s] copying elevator_walking/preview_mirror_outline.py -> /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking
+[3.606s] running install
+[3.609s] running install_lib
+[3.612s] copying /home/unitree/elevator-walking/build/elevator_walking/build/lib/elevator_walking/preview_mirror_outline.py -> /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking
+[3.614s] byte-compiling /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking/preview_mirror_outline.py to preview_mirror_outline.cpython-38.pyc
+[3.622s] running install_data
+[3.624s] running install_egg_info
+[3.628s] removing '/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking-0.1.0-py3.8.egg-info' (and everything under it)
+[3.629s] Copying ../../build/elevator_walking/elevator_walking.egg-info to /home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages/elevator_walking-0.1.0-py3.8.egg-info
+[3.632s] running install_scripts
+[3.684s] Installing move_forward_distance script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[3.684s] Installing move_left_until_line script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[3.684s] Installing move_relative script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[3.685s] Installing move_until_distance script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[3.685s] Installing preview_mirror_outline script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[3.685s] Installing preview_vertical_lines script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[3.686s] Installing publish_center_distance script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[3.686s] Installing publish_lidar_distance script to /home/unitree/elevator-walking/install/elevator_walking/lib/elevator_walking
+[3.687s] writing list of installed files to '/home/unitree/elevator-walking/build/elevator_walking/install.log'
+[3.765s] Invoked command in '/home/unitree/elevator-walking/src/elevator_walking' returned '0': PYTHONPATH=/home/unitree/elevator-walking/build/elevator_walking/prefix_override:/home/unitree/elevator-walking/install/elevator_walking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/elevator_walking build --build-base /home/unitree/elevator-walking/build/elevator_walking/build install --record /home/unitree/elevator-walking/build/elevator_walking/install.log --single-version-externally-managed

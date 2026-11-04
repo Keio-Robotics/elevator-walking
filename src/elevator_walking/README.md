@@ -44,6 +44,13 @@ not guaranteed body displacement; tire compression, wheel slip, and stopping
 delay affect accuracy. It uses the ROS `unitree_api` and `unitree_go` messages;
 it does not use the Python SDK.
 
+`move_sequence_from_json` reads `[forward_distance_m, rotation_degrees]` pairs
+from a JSON array. For each row it rotates first, then moves forward. It reads
+yaw from `/lf/sportmodestate` and estimates forward travel from wheel `q` on
+`/lowstate`; it sends `Move` and `StopMove` through `/api/sport/request` without
+starting the Python SDK. Wheel rotation estimates wheel travel, not exact body
+displacement, and IMU yaw measurement can drift.
+
 Build and run from the workspace root:
 
 ```bash
@@ -69,6 +76,23 @@ The command stops on the requested wheel-angle estimate, missing `LowState`,
 wheel-angle stall, maximum run time, or Ctrl-C. Start with a short distance in
 an open area and compare the reported estimate with measured floor travel; set
 `--wheel-radius-m` to a calibrated effective radius if needed.
+
+Edit `src/elevator_walking/config/motion_sequence.json` to set the route. Each
+entry is `[forward_distance_m, rotation_degrees]`; positive rotation follows
+the positive yaw direction reported by the IMU. The included example
+`[[0.0, 180.0], [1.0, 0.0]]` turns 180 degrees, then advances an estimated 1 m.
+After building the package, run:
+
+```bash
+ros2 run elevator_walking move_sequence_from_json --ros-args \
+  -p route_file:=/home/unitree/elevator-walking/src/elevator_walking/config/motion_sequence.json \
+  -p vx:=0.1 -p yaw_rate:=0.3
+```
+
+The node refreshes each velocity `Move` at 10 Hz and sends `StopMove` after
+each rotation or forward phase. It stops for stale state, stalled wheel/yaw
+feedback, or a 60-second phase timeout. Use a short test route in a clear area
+first; forward distance is based on wheel rotation, not guaranteed body travel.
 
 ## View LiDAR in a browser with Foxglove
 
@@ -151,6 +175,43 @@ ros2 run elevator_walking preview_vertical_lines --ros-args \
 
 These settings can also pick up texture and other false lines. This node only
 visualizes detections and does not move the robot.
+
+## Preview mirror-outline candidates
+
+With the RealSense color stream running, build the package if this node has not
+been installed yet, then start the preview:
+
+```bash
+source /opt/ros/foxy/setup.bash
+source /home/unitree/go2w/dlio_ws/install_foxy/setup.bash
+cd /home/unitree/elevator-walking
+colcon build --packages-select elevator_walking --symlink-install
+source install/setup.bash
+ros2 run elevator_walking preview_mirror_outline
+```
+
+In Foxglove, add an **Image** panel for
+`/camera/color/mirror_outline/compressed`. The largest convex quadrilateral
+candidate is green, and other candidates are orange. The blue rectangle shows
+the search region. Raw Canny edges are hidden by default so reflected objects
+inside the mirror do not clutter the preview; show them for debugging with
+`-p show_edges:=true`. This is an experimental
+geometric filter, not a mirror-material classifier: doors, panels, and other
+large rectangular contours can also be candidates. It only publishes a preview
+and never sends movement commands. By default, it searches the upper half of the
+image and the central half of its width.
+
+Tune the contour filtering with ROS parameters. For example, raise
+`min_area_ratio` to ignore smaller contours, narrow `max_aspect_ratio` to reject
+wide panels, or lower the Canny thresholds / increase `close_kernel_size` when
+the mirror border is broken:
+
+```bash
+ros2 run elevator_walking preview_mirror_outline --ros-args \
+  -p canny_low_threshold:=15 -p canny_high_threshold:=70 \
+  -p min_area_ratio:=0.05 -p max_aspect_ratio:=1.2 \
+  -p close_kernel_size:=9
+```
 
 ## Move left until a vertical line is detected
 

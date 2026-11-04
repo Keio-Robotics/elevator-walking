@@ -11,7 +11,7 @@ import numpy as np
 
 DETECTOR_DEFAULTS = {
     "process_width": 960,
-    "canny_low_threshold": 10,
+    "canny_low_threshold": 100,
     "canny_high_threshold": 220,
     "show_edges": True,
     "min_line_length_px": 60,
@@ -19,7 +19,7 @@ DETECTOR_DEFAULTS = {
     "max_line_gap_px": 12,
     "max_angle_from_vertical_deg": 8.0,
     "merge_tolerance_px": 20.0,
-    "center_tolerance_px": 40.0,
+    "center_tolerance_px": 480.0,
     "roi_top_ratio": 0.05,
     "roi_bottom_ratio": 0.95,
 }

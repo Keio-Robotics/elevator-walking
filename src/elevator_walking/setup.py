@@ -1,3 +1,4 @@
+from glob import glob
 from setuptools import find_packages, setup
 
 package_name = "elevator_walking"
@@ -9,6 +10,7 @@ setup(
     data_files=[
         ("share/ament_index/resource_index/packages", ["resource/" + package_name]),
         ("share/" + package_name, ["package.xml"]),
+        ("share/" + package_name + "/config", glob("config/*.json")),
     ],
     install_requires=["setuptools"],
     zip_safe=True,
@@ -20,7 +22,9 @@ setup(
         "console_scripts": [
             "move_relative = elevator_walking.move_relative:main",
             "move_forward_distance = elevator_walking.move_forward_distance:main",
+            "move_sequence_from_json = elevator_walking.move_sequence_from_json:main",
             "preview_vertical_lines = elevator_walking.preview_vertical_lines:main",
+            "preview_mirror_outline = elevator_walking.preview_mirror_outline:main",
             "move_left_until_line = elevator_walking.move_left_until_line:main",
             "publish_center_distance = elevator_walking.center_distance:main",
             "publish_lidar_distance = elevator_walking.lidar_front_distance:main",
